@@ -1188,3 +1188,12 @@ Can't verify CSRF token authenticity.
 Completed 200 OK in 150ms (Views: 1.6ms | ActiveRecord: 138.7ms | Allocations: 2087)
 
 
+Started GET "/" for ::1 at 2023-03-28 11:53:36 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TodosController#get_todos as HTML
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:4:in `get_todos'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.67ms)
+Completed 200 OK in 71ms (Views: 49.9ms | ActiveRecord: 1.5ms | Allocations: 33845)
+
+
